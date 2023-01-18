@@ -1,0 +1,79 @@
+<!-- <p>courses</p>
+
+<div *ngIf="courses.length>0;then course else nocourse"></div>
+    
+<ng-template #course>
+     List Courses
+</ng-template>
+<ng-template #nocourse>
+     No Courses Available
+</ng-template>
+
+<select [(ngModel)]="selectedValue">
+    <option *ngFor="let item of items" [value]="item.name">
+            {{item.name}}
+    </option>
+</select>
+{{selectedValue}}
+
+
+<div *ngFor="let form of forms">
+    <div [ngSwitch]="form.element">
+        <div *ngSwitchCase="'text'">
+            <div *ngFor="let frm of form.items">
+                <input type="{{frm.field}}" [(ngModel)]="frm.ngmodel">
+            </div>
+        </div>
+    </div>
+    <div [ngSwitch]="form.element">
+        <div *ngSwitchCase="'password'">
+            <div *ngFor="let frm of form.items">
+                <input type="{{frm.field}}" [(ngModel)]="frm.ngmodel">
+            </div>
+        </div>
+    </div>
+    <div [ngSwitch]="form.element">
+        <div *ngSwitchCase="'textarea'">
+            <div *ngFor="let frm of form.items">
+                <textarea [(ngModel)]="frm.ngmodel"></textarea>
+                <!-- <input type="{{frm.field}}" [(ngModel)]="frm.ngmodel"> --
+            </div>
+        </div>
+    </div>
+</div>
+
+<span appInputformat [color]="'blue'">{{attributedir | uppercase | lowercase}}</span>
+<div [ngStyle]="{backgroundColor:val==10?'red':'blue'}" >{{attributedir}}</div>
+
+
+<p appInputformat [color]="'green'">Highlight me</p> -->
+
+
+<!-- <div *ngIf="courses.length==0">
+   
+</div> -->
+<div class="container">
+    <span>{{courses.title | uppercase}}</span><br>
+<span>{{courses.student| number}}</span><br>
+<span>{{courses.rating | number:'2.1-1' }}</span><br>
+<span>{{courses.price | currency:'INR'}}</span><br>
+<span>{{courses.relaseDate | date:'shortDate'}}</span><br>
+<span >{{pipeEx | summary:10}}</span>
+</div>
+
+<input type="text" [(ngModel)]="searchtext">
+<app-highlight [searchString]="searchtext" [searchvalue]="value"></app-highlight>
+<!-- {{value}} -->
+
+<div class="card">
+    <div class="card-header">
+        <ng-content select=".header">
+
+        </ng-content>
+    </div>
+    <div class="card-body">
+        <ng-content select=".body">
+
+        </ng-content>
+    </div>
+</div>

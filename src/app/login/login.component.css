@@ -1,0 +1,14 @@
+.boldClass{
+    font-weight:bold;
+}
+.italicClass{
+    font-style:oblique;
+}
+.colorClass{
+    color:red;
+}
+
+.highlight-search-text {
+  color: black;
+  font-weight: 600;
+}

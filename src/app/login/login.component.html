@@ -1,0 +1,64 @@
+<!-- <p *ngIf="toggle">login works!</p>
+{{value}}
+<p [class]="pClass" class="boldClass italicClass" [style.color]="'grey'">
+    There are times that we want to add addition class based on some condition.
+
+</p>
+<input [value]="name" type="text" [ariaLabel]="value" >
+ <button (click)="callToogle()" >Toggle</button> -->
+<!-- <button (change)="update()">updateValue</button> -->
+<!-- <table style="border: 2px solid #000;" width="100%">
+    <tr>
+        <td [colSpan]="tbColspan" id="tab" style="border: 2px solid #000;">
+                in side td
+        </td>
+        <td>
+                in side td
+        </td>
+        <td>
+                in side td
+        </td>
+    </tr>
+    <tr>
+        <td [attr.colspan]="tbColspan" id="tab">
+                in side td
+        </td>
+        <td>
+                in side td
+        </td>
+        
+    </tr>
+</table> --> 
+
+
+<!-- <input type="text" (keyup)="keyPressed(name.value)" name="name" #name>
+<input type="text" (keyup)="keyPressed(name.value)" name="name" #name>
+<input type="text" (keyup)="keyPressed(name.value)" name="name" #name>
+<input type="text" (keyup)="keyPressed(name.value)" name="name" #name>
+<input type="text" (keyup)="keyPressed(name.value)" name="name" #name> -->
+<!-- {{name}}
+<input [(ngModel)]="name" name="name" type="text"> -->
+<div class="container card">
+    <div class="row">
+        <div class="col-12">
+            <label>Name</label>
+            <input type="text" [(ngModel)]="form.name" name="name">
+        </div>
+        <div class="col-12">
+            <label>email</label>
+            <input type="email" [(ngModel)]="form.email" name="email">
+        </div>
+        <div class="col-12">
+            <label>city</label>
+            <input type="text" [(ngModel)]="form.city" name="city">
+        </div>
+        <div class="col-12">
+            <label>password</label>
+            <input type="password" [(ngModel)]="form.password" name="password">
+        </div>
+        <div class="col-12">
+            <button class="btn btn-danger" (click)="btnSave()">Save</button>
+        </div>
+    </div>
+</div>
+

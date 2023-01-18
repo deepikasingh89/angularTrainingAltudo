@@ -1,0 +1,90 @@
+<!-- <app-login [counter]="count" *ngIf="childHide" [item]="item1"></app-login> -->
+<!-- <button (click)="toggle()">toggle</button>
+<button (click)="hdChild()">Hide/Show Child</button>
+<button (click)="incrFun()">incr</button>
+<button (click)="decrFun()">decr</button> -->
+<!-- <course>
+    <div class="header"><h1>Header</h1></div>
+    <div class="body"><p>body</p></div>
+</course> -->
+
+<!-- <course>
+    <div class="header"><h1>Header1</h1></div>
+    <div class="body"><p>body1</p></div>
+</course> -->
+<!-- <input type="text" [(ngModel)]="searchtext">
+<app-highlight [searchString]="searchtext" [searchvalue]="value"></app-highlight> -->
+
+<nav
+  class="navbar navbar-expand-lg navbar-light ps-5"
+  style="background-color: rgba(0, 0, 0, 0.2)"
+>
+     
+  <a class="navbar-brand" href="#"
+    ><img
+      src="../../assets/altudotrans.png"
+      width="200px"
+      alt="altudo_logo" /></a
+  >   
+  <button
+    class="navbar-toggler me-3"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+    (click)="navbarCollapsed = !navbarCollapsed" 
+  >
+          <span class="navbar-toggler-icon"></span>   </button
+  >    
+  <div class="collapse navbar-collapse" id="navbarSupportedContent" [class.collapse]="navbarCollapsed">
+         
+    <ul class="navbar-nav mr-auto">
+             
+      <li class="nav-item active">
+                 
+        <a class="nav-link" href="#"
+          >Home <span class="sr-only">(current)</span></a
+        >       
+      </li>
+             
+      <li class="nav-item">
+                  <a class="nav-link" href="#">Contact-Us</a>       
+      </li>
+             
+      <li class="nav-item">
+                  <a class="nav-link" href="#">Products</a>       
+      </li>
+             
+      <li class="nav-item">
+                  <a class="nav-link" href="#">About-Us</a>       
+      </li>
+             
+      <li class="nav-item dropdown">
+                 
+        <a
+          class="nav-link dropdown-toggle"
+          href="#"
+          id="navbarDropdown"
+          role="button"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+          >            Category          </a
+        >         
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">Jwellery</a>           
+          <a class="dropdown-item" href="#">Men's Clothing</a>           
+          <a class="dropdown-item" href="#">Women's Clothing</a>           
+          <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Electronics</a>         
+        </div>
+               
+      </li>
+                  
+    </ul>
+            
+  </div>
+   
+</nav>
