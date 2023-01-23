@@ -1,5 +1,6 @@
-import { Component } from "@angular/core";
-import { MainService } from "./main.service";
+import { Component } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { MainService } from './main.service';
 
 @Component({
   selector: 'course',
@@ -70,12 +71,14 @@ export class CoursesComponent {
   pipeEx =
     'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis, recusandae voluptates, nam excepturi sapiente voluptatum quidem, porro vero eligendi quos dolorem. Odit labore ipsum fugit, impedit incidunt voluptatibus commodi dolore!';
 
-  searchtext='';
-  value="Angular";
+  searchtext = '';
+  value = 'Angular';
 
-  constructor(_serive: MainService) {
+  constructor(_serive: MainService, private aroute:ActivatedRoute) {
     // let course = new MainService(1);
     console.log('course', _serive.getCourses());
+    console.log('this.aroute', this.aroute);
+    this.aroute.queryParams.subscribe((data)=>console.log(data));
   }
 
   btnSave() {
